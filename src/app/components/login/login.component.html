@@ -1,20 +1,16 @@
+<div>
+  <h1>WElCOME TO LOGIN PAGE</h1>
+  <br/>
 
-<div class="surface-card p-4 shadow-2 border-round w-full lg:w-6">
-  <div class="text-center mb-5">
-    <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="50" class="mb-3">
-    <div class="text-900 text-3xl font-medium mb-3">Welcome Back</div>
-
-  </div>
-
-  <div>
-    <label for="email1" class="block text-900 font-medium mb-2">Email</label>
-    <input id="email1" type="text" placeholder="Email address" pInputText class="w-full mb-3">
-
-    <label for="password1" class="block text-900 font-medium mb-2">Password</label>
-    <input id="password1" type="password" placeholder="Password" pInputText class="w-full mb-3">
-
+  <form action="POST" [formGroup]="myForm" (ngSubmit)="onLogin()">
+    <div>
+      <label for="username">Username:</label>
+      <input id="username" type="text" name="username" /><br/>
+      <label for="pwd">Password:</label>
+      <input id="pwd" type="password" name="password" />
+    </div>
+    <div><button type="submit" name="btn">LOGIN</button></div>
+  </form>
 
 
-    <button pButton pRipple label="Sign In" icon="pi pi-user" class="w-full"></button>
-  </div>
 </div>
