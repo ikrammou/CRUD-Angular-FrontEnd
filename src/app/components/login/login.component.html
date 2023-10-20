@@ -2,15 +2,17 @@
   <h1>WElCOME TO LOGIN PAGE</h1>
   <br/>
 
-  <form action="POST" [formGroup]="myForm" (ngSubmit)="onLogin()">
+  <form [formGroup] = "myForm" (ngSubmit) = "onLogin(myForm.value)">
     <div>
       <label for="username">Username:</label>
-      <input id="username" type="text" name="username" /><br/>
+      <input id="username" type="text" name="username" formControlName="username"/><br/>
       <label for="pwd">Password:</label>
-      <input id="pwd" type="password" name="password" />
+      <input id="pwd" type="password" name="password" formControlName="password"/>
     </div>
     <div><button type="submit" name="btn">LOGIN</button></div>
   </form>
-
+  <p>
+    Email entered is : {{username}}
+  </p>
 
 </div>

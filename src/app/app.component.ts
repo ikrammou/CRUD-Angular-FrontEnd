@@ -11,8 +11,8 @@ import {Router} from "@angular/router";
 })
 export class AppComponent {
   title = 'crudfront';
+
   constructor(private app: AppService, private http: HttpClient, private router: Router) {
-    this.app.authenticate(undefined, undefined);
   }
 
 }

@@ -15,6 +15,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import {LoginComponent} from "./components/login/login.component";
 import {CheckboxModule} from "primeng/checkbox";
 import { PasswordModule } from "primeng/password";
+import {AppService} from "./app.service";
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,7 @@ import { PasswordModule } from "primeng/password";
     ReactiveFormsModule
 
   ],
-  providers: [AppComponent],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

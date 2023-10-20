@@ -6,7 +6,6 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 })
 export class AppService {
 
-  authenticated = false;
 
   constructor(private http: HttpClient) {
   }
